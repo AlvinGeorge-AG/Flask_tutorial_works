@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block pro %}
+        <form method="POST" action="/submit">
+            <label for="name">FULLNAME :</label>
+            <input type="text" id="name" name="fname"><br>
+            <label for="age" >AGE :</label>
+            <input type="text" id="age" name="age"><br>
+            <label for="email">EMAIL :</label>
+            <input type="text" id="email" name="email"><br>
+            <label for="pass" >PASSWORD :</label>
+            <input type="password" id="pass" name="passw"><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+{% endblock %}        

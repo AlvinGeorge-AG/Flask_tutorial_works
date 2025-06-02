@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        h3{
+            color: aquamarine;
+        }
+        body{
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to BusBro !</h1>
+    <h3>BusBro Is available for :</h3>
+    {% for bus in data %}
+         <h3>{{bus}}</h3>
+    {% endfor %}
+    
+</body>
+</html>

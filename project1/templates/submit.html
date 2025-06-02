@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block pro %}
+        <h2>Welcome , {{fname}}</h2><br>
+        <p>This is a private page !</p><br>
+        <h3>User Details : </h3><br>
+        <h4>
+            FULLNAME : {{ fname }}<br>
+            EMAIL    : {{ email }}<br>
+            AGE      : {{ age }}<br>
+            PASSWORD : {{ passw }}<br>
+        </h4>
+{% endblock %}        
