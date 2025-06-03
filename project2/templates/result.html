@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block pro %}
+        <h2>Welcome , {{fname}}</h2>
+        <p>This is a private page !</p>
+        <h3>User Details : </h3>
+        <h4>
+            FULLNAME : {{ fname }}<br>
+            PASSWORD : {{ passw }}<br>
+        </h4>
+        <button onclick="window.location.href='/home'  "  >LOGOUT</button>
+{% endblock %}        

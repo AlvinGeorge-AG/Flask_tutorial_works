@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block pro %}
+<h3>User FeedBacks :</h3>
+    {% for feed in feedbacksdata %}
+        <p>Name : {{feed.FullName }}, Message : {{ feed.message }}, date : {{feed.date}}</p>
+    {% endfor %}    
+
+{% endblock %}

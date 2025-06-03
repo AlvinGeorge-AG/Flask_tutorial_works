@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block pro %}
+    <form method="POST" action="/feedbacksubmit">
+        <label for="name" >FullName :</label>
+        <input type="text" id="name" name="fname"><br><br>
+        <label for="mess" >Message :</label>
+        <textarea id="mess" name="mess"></textarea><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+{% endblock %}

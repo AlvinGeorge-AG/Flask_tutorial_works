@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+ {% block pro %}    
+        {% for user in usersdata %}
+         <p>Username :{{ user.FullName }} , Password :{{ user.Password }}</p>
+        {% endfor %} 
+ {% endblock %}
