@@ -1,14 +1,19 @@
 from flask import Flask, request, session, redirect, render_template
 from pymongo import MongoClient
 from werkzeug.security import check_password_hash , generate_password_hash
+from dotenv import load_dotenv
+import os
 
-
+load_dotenv()
 app = Flask(__name__)
 app.secret_key="@2006#alvin"
 
-client = MongoClient("mongodb://localhost:27017/")
-db = client["BusBro"]
+
+MONGO_URL = os.getenv("MONGO_URL")
+client = MongoClient(MONGO_URL)
+db = client["taskmanager"]
 users = db["users"]
+
 
 @app.route('/')
 def home():
